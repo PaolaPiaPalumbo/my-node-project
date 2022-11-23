@@ -19,5 +19,12 @@ let io = serverSocket(server); //io is the connection point between the two serv
 io.on("connection", newConnection);
 
 function newConnection(newSocket){
-  console.log(newSocket);
+  console.log(newSocket.id);
+
+  newSocket.on("mouse", mouseReceived);
+
+  function mouseReceived(dataReceived){
+    console.log(dataReceived);
+    newSocket.broadcast.emit("mouseBroadcast", dataReceived);
+  }
 }
