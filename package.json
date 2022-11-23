@@ -1,0 +1,20 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "simple node project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaolaPiaPalumbo/my-node-project.git"
+  },
+  "author": "Paola Pia Palumbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaolaPiaPalumbo/my-node-project/issues"
+  },
+  "homepage": "https://github.com/PaolaPiaPalumbo/my-node-project#readme"
+}
